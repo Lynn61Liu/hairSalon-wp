@@ -1,0 +1,322 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+ol, li {
+  list-style: none;
+}
+
+a {
+  list-style: none;
+  color: black;
+  text-decoration: none;
+}
+
+.banner-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100vw;
+  height: 800px;
+  position: relative;
+}
+.banner-wrap .banner-text {
+  width: 33%;
+  max-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: flex-start;
+  margin-left: 20px;
+}
+.banner-wrap .banner-text > * {
+  margin: 0px;
+}
+.banner-wrap .banner-text > button {
+  margin: 44px 0px;
+}
+.banner-wrap .banner-text > p {
+  text-align: center;
+  margin: 10px auto;
+}
+.banner-wrap .banner-text img {
+  width: 100px;
+}
+.banner-wrap .banner-text h1 {
+  margin: 0;
+  font-family: "GFS Didot", serif;
+  font-size: 66px;
+  color: black;
+  font-size: 50px;
+}
+.banner-wrap .banner-text h3 {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 23px;
+  font-weight: 400;
+  color: #363D3F;
+}
+.banner-wrap .banner-bg {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  z-index: -10;
+}
+
+header {
+  z-index: 99;
+  width: 100vw;
+  height: 156px;
+}
+header navigation {
+  padding: 30px 40px;
+}
+header ol {
+  height: 100%;
+  padding: 0 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header ol li {
+  flex-grow: 1;
+  border-left: 1px solid #e0dfdf;
+  counter-increment: li;
+}
+header ol li a {
+  text-transform: capitalize;
+  line-height: 150px;
+  padding-left: 16px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #787979;
+}
+header ol li a:before {
+  display: inline-block;
+  width: 30px;
+  height: 60%;
+  text-align: center;
+  color: #A8ABAC;
+  content: counter(li, decimal-leading-zero);
+  border-bottom: 1px solid #A8ABAC;
+  margin-right: 4px;
+  transition: 0.3s all ease;
+}
+header ol li a:hover {
+  color: #E20741;
+}
+header ol li a:hover::before {
+  border-bottom: 2px solid #E20741;
+  color: #E20741;
+}
+header ol li:first-child {
+  border: none;
+}
+
+.wp-container-1 figure {
+  background-color: #F7F7F7;
+  width: 100%;
+  margin: 0;
+}
+.wp-container-1 figure img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+.wp-container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.wp-container-2 > * {
+  font-size: 14px;
+  width: 80%;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  color: #787979;
+}
+.wp-container-2 :first-child,
+.wp-container-2 :nth-child(3) {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #787979;
+}
+.wp-container-2 :nth-child(2) {
+  text-align: center;
+  font-family: "GFS Didot", serif;
+  font-size: 36px;
+  font-weight: blod;
+  color: #363D3F;
+}
+.wp-container-2 :nth-child(4) {
+  margin-top: 40px;
+}
+
+.home-post-1 {
+  background-color: #F7F7F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0px;
+}
+.home-post-1 > * {
+  font-size: 14px;
+  width: 60%;
+  margin: 0;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  color: #787979;
+  margin-top: 16px;
+}
+.home-post-1 figure img {
+  width: 30px;
+}
+.home-post-1 p:first-of-type {
+  color: rebeccapurple;
+  font-family: "GFS Didot", serif;
+  font-size: 36px;
+  font-weight: blod;
+  color: #363D3F;
+  margin-bottom: 20px;
+}
+
+.home-post-2 {
+  position: relative;
+  padding: 40px 40px;
+  background-color: #F7F7F7;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  color: #787979;
+}
+.home-post-2 .wp-block-group p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #787979;
+}
+.home-post-2 .wp-block-group p:first-child {
+  color: #E20741;
+  border: #E20741 1px solid;
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  margin-right: 6px;
+}
+.home-post-2 .wp-block-group p:last-child {
+  color: #363D3F;
+}
+.home-post-2 .wp-container-12 {
+  gap: 10%;
+}
+.home-post-2 .wp-block-image {
+  position: absolute;
+  top: -80px;
+  display: flex;
+}
+.home-post-2 .wp-block-image img {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.home-post-3 {
+  height: 600px;
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.home-post-3 > div:first-child {
+  width: 30%;
+}
+.home-post-3 > div:first-child > P:first-child {
+  font-family: "GFS Didot", serif;
+  font-size: 36px;
+  font-weight: blod;
+  color: #363D3F;
+}
+.home-post-3 > div:first-child > P:nth-child(2) {
+  padding: 0 10px 0 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  color: #787979;
+}
+.home-post-3 > div:first-child > P:nth-child(3) {
+  text-transform: capitalize;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #787979;
+  font-size: 18px;
+}
+.home-post-3 > div:last-child {
+  width: 500px;
+  height: 330px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: red;
+}
+.home-post-3 > div:last-child img {
+  width: 150px;
+}
+.home-post-3 > div:last-child div {
+  position: relative;
+}
+.home-post-3 > div:last-child div p {
+  position: absolute;
+  top: 50px;
+  margin: 0;
+  color: #707070;
+}
+
+.banner-text button {
+  cursor: pointer;
+  font-size: 20px;
+  color: #E20741;
+  width: 40%;
+  padding: 20px 30px;
+  border: 2px solid #E20741;
+  background-color: transparent;
+}
+.banner-text button:disabled {
+  pointer-events: none;
+}
+.banner-text button:hover {
+  color: #fff;
+  background-color: #E20741;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+.banner-text button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+.banner-text div {
+  margin-top: 40px;
+  width: 55%;
+  border: 0.3px solid #A8ABAC;
+}
+.banner-text p {
+  font-size: 20px;
+  width: 40%;
+  color: #363D3F;
+}
+
+/*# sourceMappingURL=style.css.map */

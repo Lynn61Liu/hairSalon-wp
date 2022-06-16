@@ -1,0 +1,45 @@
+@use "../abstracts" as *;
+
+.banner-text {
+
+  button {
+    cursor: pointer;
+    font-size: 20px;
+    color: $salon-red;
+    width: 40%;
+    padding: 20px 30px;
+    // height: 66px;
+    border: 2px solid $salon-red;
+    background-color: transparent;
+    
+  }
+  & button:disabled {
+    pointer-events: none;
+  }
+  
+  & button:hover {
+    color: #fff;
+    background-color: $salon-red;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  & button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+  div{ 
+    margin-top: 40px;
+     width: 55%;
+     border: .3px solid $menu-num;
+ }
+ p{
+   font-size: 20px;
+   width: 40%;
+   color:$title-color;
+
+ }
+  
+  
+}
+

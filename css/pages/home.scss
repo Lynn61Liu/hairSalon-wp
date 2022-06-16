@@ -1,0 +1,180 @@
+@use "../abstracts" as *;
+section {
+  //  border: 1px solid black;
+}
+// ABOUT US SECTION 
+.wp-container-1 {
+  
+  figure {
+     background-color: $section-bg;
+    width: 100%;
+    margin: 0;
+    img {
+      width: 100%;
+      height: auto;
+      filter: grayscale(100%);
+    }
+  }
+}
+.wp-container-2 {
+  // padding: 40px 30px;
+  @include flexcenter(column);
+  gap: 20px;
+  & > * {
+    font-size: 14px;
+    width: 80%;
+    margin: 0;
+    @include textFont;
+  }
+  & :first-child,
+  :nth-child(3) {
+    text-align: center;
+    @include subheadingFont;
+    // background-color: $my-background-colour;
+  }
+  & :nth-child(2) {
+    text-align: center;
+    @include headingFont;
+    // background-color: red;
+  }
+  & :nth-child(4) {
+    margin-top: 40px;
+    // background-color: red;
+  }
+}
+
+// section servives
+.home-post-1 {
+  height: 400px;
+   background-color: $section-bg;
+
+  @include flexcenter(column);
+  padding: 50px 0px;
+  & > * {
+    font-size: 14px;
+    width: 60%;
+    margin: 0;
+    text-align: center;
+    @include textFont;
+    margin-top: 16px;
+  }
+  figure {
+    img {
+      width: 30px;
+    }
+  }
+  & p:first-of-type {
+    color: rebeccapurple;
+    @include headingFont;
+    margin-bottom: 20px;
+  }
+}
+
+.home-post-2 {
+ height: 300px;
+ &>div:first-of-type{
+max-width: 888px;
+margin: 0 auto;
+ }
+  position: relative;
+  padding: 40px 40px;
+  background-color: $section-bg;
+  @include textFont;
+  .wp-block-group {
+    p {
+      @include subheadingFont;
+      &:first-child {
+        color: $salon-red;
+        border: $salon-red 1px solid;
+        display: inline-block;
+        width: 20%;
+        text-align: center;
+        margin-right: 6px;
+      }
+      &:last-child {
+        color: $title-color;
+      }
+    }
+  }
+  .wp-container-12 {
+    gap: 10%;
+  }
+
+  .wp-block-image {
+    position: absolute;
+    top: -80px;
+    display: flex;
+    img {
+      margin: 0 auto;
+      width: 60%;
+    }
+  }
+}
+// team section
+.home-post-3{
+  height: 600px;
+  // background-color: pink;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+
+  & >div:first-child{
+
+    // background-color: green;
+   margin-left: 50px;
+   padding-left: 50px;
+    & >P:first-child{
+     
+      @include headingFont;
+    }
+    & >P:nth-child(2){
+     padding: 0 10px 0 0;
+       @include textFont;
+    }
+    & >P:nth-child(3){
+     text-transform: capitalize;
+       @include subheadingFont;
+       font-size: 18px;
+    }
+    
+  }
+  & >div:last-child{
+    
+     width: 50%;
+    //  height: 330px;
+    display: grid;
+    gap:8px;
+    grid-template-columns: repeat(3,1fr);
+    // background-color: red;
+    margin: 0 auto;
+    img {
+    filter: grayscale(100%);
+    width: 150px;
+    cursor: pointer;
+    &:hover{
+      filter:none;
+      // opacity: 0.5;
+    }
+    }
+    div{
+      position:relative;
+      p{
+        @include subheadingFont;
+        
+        position: absolute;
+        top:50px;
+        left:50%;
+        transform:translateX(-50px);
+        margin: 0;
+        // color: $line-color;
+        color:white;
+        text-shadow: 1px 1px 2px $section-bg;
+      }
+    }
+    
+
+  }
+   
+}
+
+

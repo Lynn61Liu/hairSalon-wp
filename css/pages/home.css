@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+ol, li {
+  list-style: none;
+}
+
+a {
+  list-style: none;
+  color: black;
+  text-decoration: none;
+}
+
+.wp-container-1 figure {
+  background-color: #F7F7F7;
+  width: 100%;
+  margin: 0;
+}
+.wp-container-1 figure img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+.wp-container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.wp-container-2 > * {
+  font-size: 14px;
+  width: 80%;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  color: #787979;
+}
+.wp-container-2 :first-child,
+.wp-container-2 :nth-child(3) {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #787979;
+}
+.wp-container-2 :nth-child(2) {
+  text-align: center;
+  font-family: "GFS Didot", serif;
+  font-size: 36px;
+  font-weight: blod;
+  color: #363D3F;
+}
+.wp-container-2 :nth-child(4) {
+  margin-top: 40px;
+}
+
+.home-post-1 {
+  height: 400px;
+  background-color: #F7F7F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0px;
+}
+.home-post-1 > * {
+  font-size: 14px;
+  width: 60%;
+  margin: 0;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  color: #787979;
+  margin-top: 16px;
+}
+.home-post-1 figure img {
+  width: 30px;
+}
+.home-post-1 p:first-of-type {
+  color: rebeccapurple;
+  font-family: "GFS Didot", serif;
+  font-size: 36px;
+  font-weight: blod;
+  color: #363D3F;
+  margin-bottom: 20px;
+}
+
+.home-post-2 {
+  height: 300px;
+  position: relative;
+  padding: 40px 40px;
+  background-color: #F7F7F7;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  color: #787979;
+}
+.home-post-2 > div:first-of-type {
+  max-width: 888px;
+  margin: 0 auto;
+}
+.home-post-2 .wp-block-group p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #787979;
+}
+.home-post-2 .wp-block-group p:first-child {
+  color: #E20741;
+  border: #E20741 1px solid;
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  margin-right: 6px;
+}
+.home-post-2 .wp-block-group p:last-child {
+  color: #363D3F;
+}
+.home-post-2 .wp-container-12 {
+  gap: 10%;
+}
+.home-post-2 .wp-block-image {
+  position: absolute;
+  top: -80px;
+  display: flex;
+}
+.home-post-2 .wp-block-image img {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.home-post-3 {
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+.home-post-3 > div:first-child {
+  margin-left: 50px;
+  padding-left: 50px;
+}
+.home-post-3 > div:first-child > P:first-child {
+  font-family: "GFS Didot", serif;
+  font-size: 36px;
+  font-weight: blod;
+  color: #363D3F;
+}
+.home-post-3 > div:first-child > P:nth-child(2) {
+  padding: 0 10px 0 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  color: #787979;
+}
+.home-post-3 > div:first-child > P:nth-child(3) {
+  text-transform: capitalize;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #787979;
+  font-size: 18px;
+}
+.home-post-3 > div:last-child {
+  width: 50%;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+}
+.home-post-3 > div:last-child img {
+  filter: grayscale(100%);
+  width: 150px;
+  cursor: pointer;
+}
+.home-post-3 > div:last-child img:hover {
+  filter: none;
+}
+.home-post-3 > div:last-child div {
+  position: relative;
+}
+.home-post-3 > div:last-child div p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #787979;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50px);
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 2px #F7F7F7;
+}
+
+/*# sourceMappingURL=home.css.map */

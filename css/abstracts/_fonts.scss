@@ -1,0 +1,43 @@
+@use "colors.scss" as *;
+
+$body-font: "Montserrat", sans-serif;
+$headings-font: "Rampart One", cursive;
+
+$heading-font:"GFS Didot", serif;
+$text-font:'Times New Roman', Times, serif;
+
+
+@mixin logoFont() {
+    font-family: $heading-font;
+    font-size: 66px;
+    // font-weight:blod;
+    color:black;
+    }
+
+@mixin headingFont() {
+        font-family: $heading-font;
+        font-size: 36px;
+        font-weight:blod;
+        color:$title-color;
+}
+@mixin subheadingFont() {
+    font-family: $text-font;
+    font-size: 22px;
+    font-weight:400;
+    color:$text-color;
+}
+
+@mixin textFont() {
+    font-family: $text-font;
+    font-size: 14px;
+    color:$text-color;
+}
+@mixin menuFont() {
+    font-family: $text-font;
+    font-size: 16px;
+    font-weight:400;
+    color:$text-color;
+}
+
+    
+
