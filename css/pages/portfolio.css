@@ -14,4 +14,30 @@ a {
   text-decoration: none;
 }
 
+.port-page-wrap {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+}
+.port-page-wrap .left {
+  margin: 0 20px;
+  padding: 30px 40px;
+  background-color: gainsboro;
+}
+.port-page-wrap .left h1 {
+  padding: 100px 0 60px 0;
+  font-family: "GFS Didot", serif;
+  font-size: 36px;
+  font-weight: blod;
+  color: #363D3F;
+  font-size: 28px;
+}
+.port-page-wrap .left p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  color: #787979;
+}
+.port-page-wrap .right {
+  background-color: #fff;
+}
+
 /*# sourceMappingURL=portfolio.css.map */

@@ -1,1 +1,24 @@
 @use "../abstracts" as *;
+ .port-page-wrap{
+    //  background-color: beige;
+     display: grid;
+     grid-template-columns: 2fr 8fr;
+.left{
+    margin: 0 20px;
+    padding: 30px 40px;
+    h1{
+        padding: 100px 0 60px 0;
+        @include headingFont;
+        font-size: 28px;
+    }
+    p{
+        @include textFont;
+    }
+    
+    background-color: gainsboro;
+}
+.right{
+   
+background-color: #fff;
+}
+ }

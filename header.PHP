@@ -2,7 +2,6 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" /> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
@@ -25,6 +24,8 @@
                 </div>
             </div>
         </header>
+
+
         <div class="banner-text">
             <?php if (is_front_page()) { ?>
             <img src="<?php echo wp_get_attachment_url(102) ?>" alt="">
@@ -44,7 +45,9 @@
         <?php if (is_page('men')) { ?>
         <img class="banner-bg" src="<?php echo wp_get_attachment_url(34) ?>" alt="">
         <?php }
+
         if (is_front_page()) { ?>
         <img class="banner-bg" src="<?php echo wp_get_attachment_url(21) ?>" alt="">
         <?php } ?>
+
     </div>

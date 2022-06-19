@@ -1,11 +1,64 @@
 @use "../abstracts" as *;
+.port{
+// background-color: green;
+z-index: 99;
+width: 100vw;
+height: 100px;
+navigation {
+  padding: 30px 40px;
+}
+ol {
+  margin: 0;
+  // height: 100%;
+  padding: 0 68px;
+  // background-color: green;
+  @include flexcenter(row);
+  justify-content: space-between;
+  li {
+    height:86px;
+    flex-grow: 1;
+    border-left: 1px solid $menu-line;
+    // height: 100%;
+    counter-increment: li;
+    a {
+      text-shadow: rgba(255, 255, 255,1) 0.8px 0.8px 0.5px;
+      text-transform: capitalize;
+      line-height: 86px;
+      padding-left: 16px;
+      @include menuFont();
 
+      &:before {
+        display: inline-block;
+        width: 30px;
+        height: 60%;
+        text-align: center;
+        color: $menu-num;
+        content: counter(li, decimal-leading-zero);
+        // counter-increment: li;
+        border-bottom: 1px solid $menu-num;
+        margin-right: 4px;
+        transition: 0.3s all ease;
+      }
+      &:hover {
+        text-shadow:none;
+        color: $salon-red;
+      }
+      &:hover::before {
+        border-bottom: 2px solid $salon-red;
+        color: $salon-red;
+      }
+    }
+    &:first-child {
+      border: none;
+    }
+  }
+}
+}
 header {
   // background-color: green;
   z-index: 99;
   width: 100vw;
   height: 156px;
- 
   navigation {
     padding: 30px 40px;
   }

@@ -13,6 +13,6 @@
     "sass": "^1.52.3"
   },
   "dependencies": {
-    "minimasonry": "^1.3.0"
+    "macy": "^2.5.1"
   }
 }
