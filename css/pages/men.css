@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+ol, li {
+  list-style: none;
+}
+
+a {
+  list-style: none;
+  color: black;
+  text-decoration: none;
+}
+
+.men-page-wrap {
+  min-height: 800px;
+}
+.men-page-wrap h1 {
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px 100px;
+}
+.men-page-wrap .services-list-wrap {
+  padding: 50px 50px;
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+.men-page-wrap .services-list-wrap .services-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.men-page-wrap .services-list-wrap .services-item .services-info {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.men-page-wrap .services-list-wrap .services-item .services-info > P:first-child {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #363D3F;
+  text-align: center;
+}
+.men-page-wrap .services-list-wrap .services-item .services-info .has-text-align-center {
+  justify-self: flex-start;
+  font-size: 15px;
+  font-style: italic;
+  color: #787979;
+  text-align: center;
+}
+.men-page-wrap .services-list-wrap .services-item .services-info > P:last-child {
+  font-size: 15px;
+  font-style: italic;
+  color: #787979;
+  text-align: center;
+}
+
+/*# sourceMappingURL=men.css.map */

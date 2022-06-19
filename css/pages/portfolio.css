@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+ol, li {
+  list-style: none;
+}
+
+a {
+  list-style: none;
+  color: black;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=portfolio.css.map */

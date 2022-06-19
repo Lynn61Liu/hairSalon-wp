@@ -104,16 +104,19 @@ footer {
     }
   }
   .social-icon{
-    .wp-container-13{
+    .wp-block-group{
       gap:10px;
-      img{
-        cursor:pointer;
-        filter: grayscale(100%) brightness(2) contrast(150%);
-        width: 56px;
-        &:hover{
-          filter:none;
+      figure{
+        img{
+          cursor:pointer;
+          filter: grayscale(100%) brightness(2) contrast(150%);
+          width: 56px;
+          &:hover{
+            filter:none;
+          }
         }
       }
+      
       &>figure:nth-of-type(3){
         // border: 1px red solid;
         img{

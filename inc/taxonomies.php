@@ -1,22 +1,22 @@
-<?php 
-function add_texture_taxonomy()
+<?php
+function add_services_taxonomy()
 {
     $labels = array(
-        'name' => _x('Texture', 'taxonomy general name'),
-        'singular_name' => _x('Texture', 'taxonomy singular name'),
-        'search_items' => __('Search Texture'),
-        'all_items' => __('All Texture'),
+        'name' => _x('services', 'taxonomy general name'),
+        'singular_name' => _x('services', 'taxonomy singular name'),
+        'search_items' => __('Search services'),
+        'all_items' => __('All services'),
         'parent_item' => __('Parent Location'),
         'parent_item_colon' => __('Parent Location:'),
-        'edit_item' => __('Edit Texture'),
-        'update_item' => __('Update Texture'),
-        'add_new_item' => __('Add New Texture'),
-        'new_item_name' => __('New Texture Name'),
-        'menu_name' => __('Texture'),
+        'edit_item' => __('Edit services'),
+        'update_item' => __('Update services'),
+        'add_new_item' => __('Add New services'),
+        'new_item_name' => __('New services Name'),
+        'menu_name' => __('services'),
     );
 
 
-    register_taxonomy('texture', 'product', array(
+    register_taxonomy('wServices', array('women', 'men'), array(
         'labels' => $labels,
         'hierarchical' => true,
         'public' => true,
@@ -24,9 +24,9 @@ function add_texture_taxonomy()
         'show_admin_column' => true,
         'show_in_nav_menus' => true,
         'query_var' => true,
-        'rewrite' => array('slug' => 'product/texture'),
+        'rewrite' => array('slug' => 'staff/wServices'),
     ));
 }
-add_action('init', 'add_texture_taxonomy', 0);
-
+add_action('init', 'add_services_taxonomy', 0);
 ?>
+<?php    ?>

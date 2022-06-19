@@ -23,6 +23,7 @@ header {
       // height: 100%;
       counter-increment: li;
       a {
+        text-shadow: rgba(255, 255, 255,1) 0.8px 0.8px 0.5px;
         text-transform: capitalize;
         line-height: 86px;
         padding-left: 16px;
@@ -41,6 +42,7 @@ header {
           transition: 0.3s all ease;
         }
         &:hover {
+          text-shadow:none;
           color: $salon-red;
         }
         &:hover::before {

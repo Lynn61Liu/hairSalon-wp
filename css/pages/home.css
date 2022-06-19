@@ -14,25 +14,24 @@ a {
   text-decoration: none;
 }
 
-.wp-container-1 figure {
+.home-post-0 .wp-container-1 figure {
   background-color: #F7F7F7;
   width: 100%;
   margin: 0;
 }
-.wp-container-1 figure img {
+.home-post-0 .wp-container-1 figure img {
   width: 100%;
   height: auto;
   filter: grayscale(100%);
 }
-
-.wp-container-2 {
+.home-post-0 .wp-container-2 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 20px;
 }
-.wp-container-2 > * {
+.home-post-0 .wp-container-2 > * {
   font-size: 14px;
   width: 80%;
   margin: 0;
@@ -40,22 +39,22 @@ a {
   font-size: 14px;
   color: #787979;
 }
-.wp-container-2 :first-child,
-.wp-container-2 :nth-child(3) {
+.home-post-0 .wp-container-2 :first-child,
+.home-post-0 .wp-container-2 :nth-child(3) {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-size: 22px;
   font-weight: 400;
   color: #787979;
 }
-.wp-container-2 :nth-child(2) {
+.home-post-0 .wp-container-2 :nth-child(2) {
   text-align: center;
   font-family: "GFS Didot", serif;
   font-size: 36px;
   font-weight: blod;
   color: #363D3F;
 }
-.wp-container-2 :nth-child(4) {
+.home-post-0 .wp-container-2 :nth-child(4) {
   margin-top: 40px;
 }
 

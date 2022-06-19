@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.52.3"
+  },
+  "dependencies": {
+    "minimasonry": "^1.3.0"
   }
 }

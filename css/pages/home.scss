@@ -1,46 +1,47 @@
 @use "../abstracts" as *;
-section {
-  //  border: 1px solid black;
-}
+
 // ABOUT US SECTION 
-.wp-container-1 {
+.home-post-0{
+  .wp-container-1 {
   
-  figure {
-     background-color: $section-bg;
-    width: 100%;
-    margin: 0;
-    img {
+    figure {
+       background-color: $section-bg;
       width: 100%;
-      height: auto;
-      filter: grayscale(100%);
+      margin: 0;
+      img {
+        width: 100%;
+        height: auto;
+        filter: grayscale(100%);
+      }
     }
   }
-}
-.wp-container-2 {
-  // padding: 40px 30px;
-  @include flexcenter(column);
-  gap: 20px;
-  & > * {
-    font-size: 14px;
-    width: 80%;
-    margin: 0;
-    @include textFont;
+  .wp-container-2 {
+    // padding: 40px 30px;
+    @include flexcenter(column);
+    gap: 20px;
+    & > * {
+      font-size: 14px;
+      width: 80%;
+      margin: 0;
+      @include textFont;
+    }
+    & :first-child,
+    :nth-child(3) {
+      text-align: center;
+      @include subheadingFont;
+      // background-color: $my-background-colour;
+    }
+    & :nth-child(2) {
+      text-align: center;
+      @include headingFont;
+      // background-color: red;
+    }
+    & :nth-child(4) {
+      margin-top: 40px;
+      // background-color: red;
+    }
   }
-  & :first-child,
-  :nth-child(3) {
-    text-align: center;
-    @include subheadingFont;
-    // background-color: $my-background-colour;
-  }
-  & :nth-child(2) {
-    text-align: center;
-    @include headingFont;
-    // background-color: red;
-  }
-  & :nth-child(4) {
-    margin-top: 40px;
-    // background-color: red;
-  }
+  
 }
 
 // section servives

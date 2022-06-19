@@ -3,7 +3,7 @@ function add_women_type()
 {
     $labels = array(
         'name' => 'Women',
-        'singular_name' => 'Women services',
+        'singular_name' => 'Women',
         'add_new' => 'Add New',
     );
 
@@ -39,8 +39,8 @@ function add_men_type()
 {
     $labels = array(
         'name' => 'Men',
-        'singular_name' => 'Men services',
-        'add_new' => 'Add Men New',
+        'singular_name' => 'Men',
+        'add_new' => 'Add New',
     );
 
     $args = array(
@@ -84,7 +84,7 @@ function add_staff_type()
 {
     $labels = array(
         'name' => 'Staff',
-        'singular_name' => 'Staff ',
+        'singular_name' => 'Staff',
         'add_new' => 'Add New Staff',
     );
 

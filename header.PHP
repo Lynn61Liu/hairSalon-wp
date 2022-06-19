@@ -40,7 +40,11 @@
         </div>
         <?php if (is_page('women')) { ?>
         <img class="banner-bg" src="<?php echo wp_get_attachment_url(37) ?>" alt="">
-        <?php } else { ?>
+        <?php } ?>
+        <?php if (is_page('men')) { ?>
+        <img class="banner-bg" src="<?php echo wp_get_attachment_url(34) ?>" alt="">
+        <?php }
+        if (is_front_page()) { ?>
         <img class="banner-bg" src="<?php echo wp_get_attachment_url(21) ?>" alt="">
         <?php } ?>
     </div>
