@@ -14,7 +14,12 @@ ol {
   // background-color: green;
   @include flexcenter(row);
   justify-content: space-between;
+  
   li {
+    .current_page_item{
+      text-shadow:none;
+      color: $salon-red;
+    }
     height:86px;
     flex-grow: 1;
     border-left: 1px solid $menu-line;
@@ -41,8 +46,10 @@ ol {
       }
       &:hover {
         text-shadow:none;
-        color: $salon-red;
+        // color: $salon-red;
+        COLOR:YELLOW;
       }
+      
       &:hover::before {
         border-bottom: 2px solid $salon-red;
         color: $salon-red;

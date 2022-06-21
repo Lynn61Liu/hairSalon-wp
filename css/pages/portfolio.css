@@ -43,8 +43,5 @@ a {
 .port-page-wrap .right figure img {
   cursor: pointer;
 }
-.port-page-wrap .right figure img:hover {
-  transform: scale(1.4);
-}
 
 /*# sourceMappingURL=portfolio.css.map */

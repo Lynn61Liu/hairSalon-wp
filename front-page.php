@@ -19,7 +19,7 @@
     <?php if ($the_query->have_posts()) : ?>
     <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
     <section class="<?php echo "home-post-$index";  ?>">
-        <div>
+        <div data-aos="fade-up" data-aos-duration="1000">
             <?php the_content();   ?>
         </div>
 
@@ -37,7 +37,7 @@
                     ?>
 
 
-        <div class="team-wrap">
+        <div data-aos="fade-down" data-aos-duration="1000" class="team-wrap">
             <?php if ($query->have_posts()) : ?>
             <?php while ($query->have_posts()) :  $query->the_post(); ?>
             <div>

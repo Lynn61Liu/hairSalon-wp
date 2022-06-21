@@ -40,7 +40,7 @@ a {
 .banner-wrap .banner-text > button {
   margin: 44px 0px;
 }
-.banner-wrap .banner-text > p {
+.banner-wrap .banner-text p {
   text-align: center;
   margin: 10px auto;
 }
@@ -49,15 +49,13 @@ a {
 }
 .banner-wrap .banner-text h1 {
   margin: 0;
-  font-family: "GFS Didot", serif;
-  font-size: 66px;
-  color: black;
   font-size: 50px;
+  font-family: "Bodoni Moda", serif;
 }
 .banner-wrap .banner-text h3 {
   margin: 0;
   font-family: "Times New Roman", Times, serif;
-  font-size: 23px;
+  font-size: 21px;
   font-weight: 400;
   color: #363D3F;
 }
@@ -92,6 +90,10 @@ a {
   border-left: 1px solid #e0dfdf;
   counter-increment: li;
 }
+.port ol li .current_page_item {
+  text-shadow: none;
+  color: #E20741;
+}
 .port ol li a {
   text-shadow: rgb(255, 255, 255) 0.8px 0.8px 0.5px;
   text-transform: capitalize;
@@ -115,7 +117,7 @@ a {
 }
 .port ol li a:hover {
   text-shadow: none;
-  color: #E20741;
+  COLOR: YELLOW;
 }
 .port ol li a:hover::before {
   border-bottom: 2px solid #E20741;
@@ -245,7 +247,7 @@ header ol li:first-child {
   margin-top: 16px;
 }
 .home-post-1 figure img {
-  width: 30px;
+  width: 55px;
 }
 .home-post-1 p:first-of-type {
   color: rebeccapurple;
@@ -702,10 +704,6 @@ footer .social-icon .wp-block-group > figure:nth-of-type(3) img {
 .port-page-wrap .right figure img {
   cursor: pointer;
 }
-.port-page-wrap .right figure img:hover {
-  transform: scale(1.4);
-}
-
 .booking-page-wrap {
   margin: 0 auto;
   width: 60vw;

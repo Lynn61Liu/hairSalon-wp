@@ -15,7 +15,7 @@
     & > button {
       margin: 44px 0px;
     }
-    & > p {
+     p {
       text-align: center;
       margin: 10px auto;
     }
@@ -31,14 +31,16 @@
     // border: 1px salmon solid;
     h1 {
       margin: 0;
-      // color:rebeccapurple;
-      @include logoFont;
+      //  color:rebeccapurple;
+      // @include logoFont;
       font-size: 50px;
+      font-family: $logo-font;
+     
     }
     h3 {
       margin: 0;
       font-family: $text-font;
-      font-size: 23px;
+      font-size: 21px;
       font-weight: 400;
       color: $title-color;
     }
