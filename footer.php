@@ -13,7 +13,7 @@
 
         </div> -->
         <?php if (is_active_sidebar('interesting-widget')) : ?>
-        <div class="subs-email" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+        <div class="subs-email" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
             <?php dynamic_sidebar('interesting-widget'); ?>
         </div>
         <?php endif; ?>

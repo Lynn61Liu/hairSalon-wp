@@ -43,7 +43,7 @@
             <div data-aos="fade-right" data-aos-delay="800" data-aos-duration="1000" data-aos-offset="300"
                 data-aos-easing="ease-in-sine">
             </div>
-            <section data-aos="fade-right" data-aos-delay="900" data-aos-duration="1000" data-aos-offset="300"
+            <section data-aos="fade-right" data-aos-delay="800" data-aos-duration="1000" data-aos-offset="100"
                 data-aos-easing="ease-in-sine">
                 <p>268
                     Penrose Road Mount Wellington, Auckland 1060</p>

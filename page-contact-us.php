@@ -4,7 +4,7 @@
 
         <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
-        <div class="container" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container">
             <?php the_content() ?>
         </div>
         <?php endwhile; ?>
