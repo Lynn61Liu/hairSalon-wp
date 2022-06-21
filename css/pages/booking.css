@@ -1,0 +1,26 @@
+body {
+  color: #363D3F;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+ol, li {
+  list-style: none;
+}
+
+a {
+  list-style: none;
+  color: black;
+  text-decoration: none;
+}
+
+.booking-page-wrap {
+  margin: 0 auto;
+  width: 60vw;
+}
+.booking-page-wrap .bookly-form {
+  margin: 46px auto 86PX auto;
+}
+
+/*# sourceMappingURL=booking.css.map */

@@ -4,14 +4,20 @@
         <p>
             Subscribe to the sara lewis Newsletter for special offers
         </p>
-        <div class="subs-email">
+        <!-- <div class="subs-email">
             <div> <input type="text" placeholder="Email"></div>
             <div><button>
                     SEND
                 </button></div>
 
 
+        </div> -->
+        <?php if (is_active_sidebar('interesting-widget')) : ?>
+        <div class="subs-email">
+            <?php dynamic_sidebar('interesting-widget'); ?>
         </div>
+        <?php endif; ?>
+
 
 
     </div>

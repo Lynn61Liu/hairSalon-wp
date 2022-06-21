@@ -2,7 +2,7 @@
  .port-page-wrap{
     //  background-color: beige;
      display: grid;
-     grid-template-columns: 2fr 8fr;
+     grid-template-columns: 3fr 7fr;
 .left{
     margin: 0 20px;
     padding: 30px 40px;
@@ -17,8 +17,15 @@
     
     background-color: gainsboro;
 }
-.right{
-   
+.right{ 
 background-color: #fff;
+figure{
+    img{
+        cursor: pointer;
+        &:hover{
+            // transform:scale(1.4);
+        }
+    }
+}
 }
  }

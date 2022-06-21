@@ -1,4 +1,5 @@
 body {
+  color: #363D3F;
   margin: 0;
   padding: 0;
   position: relative;
@@ -16,7 +17,7 @@ a {
 
 .port-page-wrap {
   display: grid;
-  grid-template-columns: 2fr 8fr;
+  grid-template-columns: 3fr 7fr;
 }
 .port-page-wrap .left {
   margin: 0 20px;
@@ -38,6 +39,12 @@ a {
 }
 .port-page-wrap .right {
   background-color: #fff;
+}
+.port-page-wrap .right figure img {
+  cursor: pointer;
+}
+.port-page-wrap .right figure img:hover {
+  transform: scale(1.4);
 }
 
 /*# sourceMappingURL=portfolio.css.map */

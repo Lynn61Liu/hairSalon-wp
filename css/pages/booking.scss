@@ -1,0 +1,14 @@
+@use "../abstracts" as *;
+
+.booking-page-wrap {
+    margin: 0 auto;
+    width: 60vw;
+    // @include title-font;	
+    // background-color: pink;
+  
+    .bookly-form {
+        // border: 1px solid;		    
+        // width: 60%;		    
+         margin: 46px auto 86PX auto;
+        }
+}
