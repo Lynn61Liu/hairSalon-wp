@@ -1,8 +1,10 @@
 <?php get_header("portfolio"); ?>
 <div class="port-page-wrap">
     <div class="left">
-        <h1>What You Can Expect from Auckland Studio</h1>
-        <p>We offer exclusive and personalised men’s Barba services to all our customers. Our barbers are all highly
+        <h1 data-aos="fade-up" data-aos-duration="2000">What You Can Expect from Auckland Studio</h1>
+        <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">We offer exclusive and personalised men’s
+            Barba services to all
+            our customers. Our barbers are all highly
             skilled to provide a first-class service. We offer a wide range of the finest products based on your skin
             and hair type. Our experience has refined our services to provide the best in traditional barber services to
             include traditional wet shaves, haircuts, bespoke skincare, and facial cleansing.
@@ -16,7 +18,7 @@
     </div>
     <div class="right"> <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-duration="2000">
             <?php the_content() ?>
         </div>
         <?php endwhile; ?>

@@ -84,15 +84,19 @@ a {
   flex-direction: row;
   justify-content: space-between;
 }
+.port ol .current-menu-item a {
+  text-shadow: none;
+  color: #E20741;
+}
+.port ol .current-menu-item a::before {
+  border-bottom: 2px solid #E20741;
+  color: #E20741;
+}
 .port ol li {
   height: 86px;
   flex-grow: 1;
   border-left: 1px solid #e0dfdf;
   counter-increment: li;
-}
-.port ol li .current_page_item {
-  text-shadow: none;
-  color: #E20741;
 }
 .port ol li a {
   text-shadow: rgb(255, 255, 255) 0.8px 0.8px 0.5px;
@@ -117,7 +121,7 @@ a {
 }
 .port ol li a:hover {
   text-shadow: none;
-  COLOR: YELLOW;
+  color: #E20741;
 }
 .port ol li a:hover::before {
   border-bottom: 2px solid #E20741;
@@ -143,6 +147,14 @@ header ol {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+}
+header ol .current-menu-item a {
+  text-shadow: none;
+  color: #E20741;
+}
+header ol .current-menu-item a::before {
+  border-bottom: 2px solid #E20741;
+  color: #E20741;
 }
 header ol li {
   height: 86px;

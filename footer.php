@@ -1,7 +1,7 @@
 <div class="subscription">
     <img src="<?php echo wp_get_attachment_url('133') ?> " alt="">
     <div class="subs-text">
-        <p>
+        <p data-aos="fade-up" data-aos-duration="1000">
             Subscribe to the sara lewis Newsletter for special offers
         </p>
         <!-- <div class="subs-email">
@@ -13,7 +13,7 @@
 
         </div> -->
         <?php if (is_active_sidebar('interesting-widget')) : ?>
-        <div class="subs-email">
+        <div class="subs-email" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
             <?php dynamic_sidebar('interesting-widget'); ?>
         </div>
         <?php endif; ?>
@@ -25,7 +25,7 @@
 <footer>
 
 
-    <div class="foot-nav">
+    <div class="foot-nav" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
         <h1>Page</h1>
         <?php wp_nav_menu([
             'theme_location' => 'menu-header',
@@ -34,7 +34,7 @@
             'items_wrap' => '<ol>%3$s</ol>',
         ]); ?>
     </div>
-    <div class=" foot-des">
+    <div class=" foot-des" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
         <h1>Description</h1>
         <p>Our philosophy is simple, education for our team and our clients.
             We always want to work towards becoming a better salon, recommend
@@ -43,7 +43,7 @@
             we want to be a place where people go to get better haircuts.
         </p>
     </div>
-    <div class="social-icon">
+    <div class="social-icon" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
         <h1>Follow Us</h1>
 
 

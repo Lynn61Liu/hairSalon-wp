@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 <div class="women-page-wrap" style="background-image: url(<?php echo wp_get_attachment_image_url(39); ?>)">
-    <h1>WOMEN SERVICES</h1>
-    <p>
+    <h1 data-aos="fade-up" data-aos-duration="1000">WOMEN SERVICES</h1>
+    <p data-aos="fade-up" data-aos-duration="1000">
         SALON by sara lewis offers a full range of hair treatments in a no-drama, design-forward environment.
         We hire the top stylists in NewZealand, and try to use natural and organic products when possible.
     </p>
-    <div class="br0"></div>
-    <div class="items-wrap">
+    <div class="br0" data-aos="fade-up" data-aos-duration="1000"></div>
+    <div data-aos="fade-up" data-aos-duration="1000" class="items-wrap">
         <?php
         $parent_ID = 0;
         //-level_one_clilds-
@@ -22,7 +22,7 @@
 
         ?>
 
-        <div class="women-list-wrap">
+        <div class="women-list-wrap" data-aos="fade-up" data-aos-duration="1000">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <!-- <div class="list-content"> -->
