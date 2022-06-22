@@ -3,14 +3,18 @@
 .banner-text {
 
   button {
+    
     cursor: pointer;
     font-size: 20px;
-    color: $salon-red;
+    
     width: 40%;
     padding: 20px 30px;
     // height: 66px;
     border: 2px solid $salon-red;
     background-color: transparent;
+    a{
+      color: $salon-red;
+    }
     
   }
   & button:disabled {
@@ -18,7 +22,10 @@
   }
   
   & button:hover {
-    color: #fff;
+    a{
+      color: #fff;
+    }
+    
     background-color: $salon-red;
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-2px);
@@ -61,7 +68,8 @@
   }
   
   .booking-btn:hover {
-    color: #fff;
+    a{ color: #fff;}
+   
     background-color: black;}
 
 

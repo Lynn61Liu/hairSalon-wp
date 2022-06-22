@@ -378,20 +378,24 @@ header ol li:first-child {
 .banner-text button {
   cursor: pointer;
   font-size: 20px;
-  color: #E20741;
   width: 40%;
   padding: 20px 30px;
   border: 2px solid #E20741;
   background-color: transparent;
 }
+.banner-text button a {
+  color: #E20741;
+}
 .banner-text button:disabled {
   pointer-events: none;
 }
 .banner-text button:hover {
-  color: #fff;
   background-color: #E20741;
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
+}
+.banner-text button:hover a {
+  color: #fff;
 }
 .banner-text button:active {
   box-shadow: none;
@@ -425,8 +429,10 @@ header ol li:first-child {
 }
 
 .booking-btn:hover {
-  color: #fff;
   background-color: black;
+}
+.booking-btn:hover a {
+  color: #fff;
 }
 
 .subscription {

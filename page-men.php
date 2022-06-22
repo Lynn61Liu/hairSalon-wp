@@ -23,7 +23,12 @@
             </div>
             <div class="services-info" data-aos="fade-up" data-aos-duration="1000">
                 <?php the_content(); ?>
-                <button class="booking-btn" data-aos="fade-up" data-aos-duration="1000"> Booking</button>
+
+                <?php $url = home_url('/booking') ?>
+
+                <button class="booking-btn" data-aos="fade-up" data-aos-duration="1000">
+                    <a href="<?php echo $url ?>">Booking</a></button>
+
             </div>
         </div>
         <?php endwhile; ?>

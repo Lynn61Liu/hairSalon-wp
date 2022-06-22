@@ -27,43 +27,45 @@
             <div class="bar2"></div>
             <!-- <div class="list-content"> -->
             <!-- <div class="inner-border"> -->
-
-            <div class="list-content" style="background-image: url(<?php echo $cover['url']; ?>)">
-                <div class="treatments-filter">
-                    <p><?php echo $level_one_clild->name ?></p>
-                    <?php
-                        $custom_terms = get_terms('services');
-                        $args = array(
-                            'post_type' => 'women',
-                            'tax_query' => array(
-                                array(
-                                    'taxonomy' => 'wServices',
-                                    'field'    => 'slug',
-                                    'terms'    => $level_one_clild->slug,
+            <?php $url = home_url('/booking') ?>
+            <a href="<?php echo $url ?>">
+                <div class="list-content" style="background-image: url(<?php echo $cover['url']; ?>)">
+                    <div class="treatments-filter">
+                        <p><?php echo $level_one_clild->name ?></p>
+                        <?php
+                            $custom_terms = get_terms('services');
+                            $args = array(
+                                'post_type' => 'women',
+                                'tax_query' => array(
+                                    array(
+                                        'taxonomy' => 'wServices',
+                                        'field'    => 'slug',
+                                        'terms'    => $level_one_clild->slug,
+                                    ),
                                 ),
-                            ),
-                        );
-                        $query = new WP_Query($args);
-                        // var_dump($query);
-                        ?>
+                            );
+                            $query = new WP_Query($args);
+                            // var_dump($query);
+                            ?>
 
 
-                    <?php if ($query->have_posts()) : ?>
-                    <?php while ($query->have_posts()) :  $query->the_post(); ?>
-                    <div class="women-services-item">
-                        <?php the_title(); ?>
+                        <?php if ($query->have_posts()) : ?>
+                        <?php while ($query->have_posts()) :  $query->the_post(); ?>
+                        <div class="women-services-item">
+                            <?php the_title(); ?>
+
+                        </div>
+                        <!-- <button class="booking-btn"> Booking</button> -->
+                        <?php endwhile; ?>
+                        <!-- <button class="booking-btn"> Booking</button> -->
+                        <?php endif; ?>
+                        <?php wp_reset_postdata(); ?>
+
+
 
                     </div>
-                    <!-- <button class="booking-btn"> Booking</button> -->
-                    <?php endwhile; ?>
-                    <!-- <button class="booking-btn"> Booking</button> -->
-                    <?php endif; ?>
-                    <?php wp_reset_postdata(); ?>
-
-
-
                 </div>
-            </div>
+            </a>
         </div>
 
         <?php endforeach;

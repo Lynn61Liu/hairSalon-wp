@@ -32,14 +32,22 @@
 
         <div class="banner-text">
             <?php if (is_front_page()) { ?>
+            <?php
+                $custom_logo_id = get_theme_mod('custom_logo');
+                $image = wp_get_attachment_image_url($custom_logo_id, 'custom-logo-size');
+                ?>
             <img data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="300"
-                data-aos-easing="ease-in-sine" src="<?php echo wp_get_attachment_url(102) ?>" alt="">
+                data-aos-easing="ease-in-sine" src=<?php echo $image; ?> alt="logo" />
+            <!-- <img  src="<?php echo wp_get_attachment_url(102) ?>" alt=""> -->
             <h1 data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="300"
                 data-aos-easing="ease-in-sine">SARALEWIS</h1>
             <h3 data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000" data-aos-offset="100"
                 data-aos-easing="ease-in-sine">Keeping your perfect look</h3>
             <button data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000" data-aos-offset="300"
-                data-aos-easing="ease-in-sine">Book Online</button>
+                data-aos-easing="ease-in-sine">
+                <?php $url = home_url('/booking') ?>
+                <a href="<?php echo $url ?>"> Book Online</a>
+            </button>
             <div data-aos="fade-right" data-aos-delay="800" data-aos-duration="1000" data-aos-offset="300"
                 data-aos-easing="ease-in-sine">
             </div>

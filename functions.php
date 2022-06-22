@@ -37,12 +37,7 @@ include __DIR__ . "/inc/font.php";
 // include __DIR__ . "/inc/widget.php";
 
 
-// custom_logo
-function add_custom_logo()
-{
-    add_theme_support('custom-logo');
-}
-add_action('after_setup_theme', 'add_custom_logo');
+// define_widgets
 
 function define_widgets()
 {
@@ -58,3 +53,27 @@ function define_widgets()
     );
 }
 add_action('widgets_init', 'define_widgets');
+
+
+
+function create_logo_size()
+{
+    add_image_size('custom-logo-size', 200, 200, true);
+}
+
+add_action('after_setup_theme', 'create_logo_size');
+
+function add_custom_logo()
+{
+    $defaults = array(
+        'height' => 'custom-logo-size',
+        'width' => 'custom-logo-size',
+        'flex-height' => true,
+        'flex-width' => true,
+
+    );
+
+    add_theme_support('custom-logo', $defaults);
+}
+
+add_action('after_setup_theme', 'add_custom_logo');
