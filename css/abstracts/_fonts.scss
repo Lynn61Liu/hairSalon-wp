@@ -29,7 +29,7 @@ $text-font:'Times New Roman', Times, serif;
 
 @mixin textFont() {
     font-family: $text-font;
-    font-size: 14px;
+    font-size: 17px;
     color:$text-color;
 }
 @mixin menuFont() {
@@ -40,4 +40,9 @@ $text-font:'Times New Roman', Times, serif;
 }
 
     
+@media (min-width: 782px) and (max-width: 1025px){
+    @mixin textFont() {
+        font-size: 13px;
+    }
+}
 

@@ -129,4 +129,39 @@
   COLOR: #959595;
 }
 
+@media (max-width: 1025px) {
+  #massage-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-page-wrap .container > .wp-block-group:first-of-type > :first-child {
+    width: 100%;
+    padding: 0;
+  }
+  .contact-page-wrap .container > .wp-block-group:first-of-type > :last-child {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 782px) {
+  #massage-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-page-wrap .container > .wp-block-group:first-of-type > :first-child {
+    width: 100%;
+    padding: 0;
+  }
+  .contact-page-wrap .container > .wp-block-group:first-of-type > :last-child {
+    margin-left: 0px;
+  }
+  .contact-page-wrap .container > p:first-of-type {
+    font-size: 43px;
+    margin: 0;
+  }
+  .contact-page-wrap .container > .wp-block-group:first-of-type > :first-child .wp-block-group__inner-container > p:first-of-type {
+    font-size: 17px;
+    margin-bottom: 8px;
+  }
+}
+
 /*# sourceMappingURL=contact.css.map */

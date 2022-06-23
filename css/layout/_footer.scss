@@ -146,3 +146,83 @@ footer {
     }
   }
 }
+
+@media (min-width: 782px) and (max-width: 1025px){
+  .subscription p {
+    font-size: 24px;
+    margin: 0;
+  }
+  footer {
+    & > div {
+      h1 {
+       font-size: 23px;
+      }
+     
+    }
+    .foot-des{
+      p{
+        font-size: 10px;
+      }
+    }
+    .foot-nav ol{
+      margin: 0;
+      padding: 0;
+      a{
+        font-size: 12px;
+      }
+    }
+
+  }
+  
+}
+@media (max-width: 782px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+    & > div {
+      h1 {
+       font-size: 18px;
+      }
+     
+    }
+    .foot-des{
+      p{
+        font-size: 10px;
+      }
+    }
+    .foot-nav ol{
+      margin: 0;
+      padding: 0;
+      a{
+        font-size: 12px;
+      }
+    }
+
+  }
+  .subscription {
+    p{
+      display: none;
+      font-size: 12px;
+    }
+    .subs-email
+    {
+      section{
+      form{
+        .sub-email{
+        #form_email_6 { width: auto;}
+      }
+      }
+    }
+
+    }
+  }
+  footer .social-icon .wp-block-group figure img {
+width: 30px;}
+footer .social-icon .wp-block-group > figure:nth-of-type(3) img {
+  width: 27px;
+}
+.home-post-0 .wp-container-2 {
+  margin-bottom: 32px;}
+}

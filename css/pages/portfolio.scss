@@ -20,12 +20,48 @@
 .right{ 
 background-color: #fff;
 figure{
+    overflow: hidden;
     img{
+        width: 100%;
+        transition: all 1s;
         cursor: pointer;
+        filter: grayscale(110%);
         &:hover{
-            // transform:scale(1.4);
+            filter: none;
+            transform:scale(1.2);
         }
     }
 }
 }
  }
+
+ @media (min-width: 782px) and (max-width: 1025px){
+    .port{
+        display: none;
+    }
+    .port-page-wrap{
+        grid-template-columns:1fr;
+    }
+    .port-page-wrap .left {
+        margin: 20px auto;
+        h1{
+            padding: 0;
+        }
+    }
+
+}
+@media (max-width: 782px) {
+    .port{
+        display: none;
+    }
+    .port-page-wrap{
+        padding: 0 8px;
+        grid-template-columns:1fr;
+    }
+    .port-page-wrap .left {
+        margin: 20px auto;
+        h1{
+            padding: 0;
+        }
+    }
+}

@@ -53,3 +53,44 @@
     z-index: -10;
   }
 }
+
+// ipad
+@media (max-width: 1025px) {
+  .banner-wrap{
+    height: auto;
+    margin-bottom: 50px;
+    .banner-text{ 
+      padding-top: 130px;
+      width: 100%;
+      h1{
+        font-size: 40px;
+      }
+      h3{
+        font-size: 18px;
+      }
+      button{
+        font-size: inherit;
+     width:20%
+      }
+      p{font-size: 16px;}
+      div{
+        width: 28%;
+      }
+    }
+    
+   
+  }
+  .banner-bg {
+     display: none;
+  }
+}
+
+//phone 
+@media (max-width: 700px){
+  .banner-text {
+     button{
+      padding: 0 !important;
+    }
+  }
+}
+

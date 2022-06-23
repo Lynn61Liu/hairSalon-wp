@@ -15,12 +15,12 @@ a {
   text-decoration: none;
 }
 
-.home-post-0 .wp-container-1 figure {
+.home-post-0 .img-wrap figure {
   background-color: #F7F7F7;
   width: 100%;
   margin: 0;
 }
-.home-post-0 .wp-container-1 figure img {
+.home-post-0 .img-wrap figure img {
   width: 100%;
   height: auto;
   filter: grayscale(100%);
@@ -37,7 +37,7 @@ a {
   width: 80%;
   margin: 0;
   font-family: "Times New Roman", Times, serif;
-  font-size: 14px;
+  font-size: 17px;
   color: #787979;
 }
 .home-post-0 .wp-container-2 :first-child,
@@ -74,7 +74,7 @@ a {
   margin: 0;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
-  font-size: 14px;
+  font-size: 17px;
   color: #787979;
   margin-top: 16px;
 }
@@ -96,7 +96,7 @@ a {
   padding: 40px 40px;
   background-color: #F7F7F7;
   font-family: "Times New Roman", Times, serif;
-  font-size: 14px;
+  font-size: 17px;
   color: #787979;
 }
 .home-post-2 > div:first-of-type {
@@ -152,7 +152,7 @@ a {
 .home-post-3 > div:first-child > P:nth-child(2) {
   padding: 0 10px 0 0;
   font-family: "Times New Roman", Times, serif;
-  font-size: 14px;
+  font-size: 17px;
   color: #787979;
 }
 .home-post-3 > div:first-child > P:nth-child(3) {
@@ -193,6 +193,68 @@ a {
   margin: 0;
   color: white;
   text-shadow: 1px 1px 2px #F7F7F7;
+}
+
+@media (min-width: 782px) and (max-width: 1025px) {
+  .home-post-0 .img-wrap {
+    display: flex;
+  }
+  .home-post-0 .img-wrap figure {
+    margin: auto 0;
+  }
+  .home-post-3 > div:first-child {
+    margin: 0;
+  }
+  .home-post-2 .wp-block-group p {
+    font-size: 16px;
+  }
+  .home-post-3 > div:last-child {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .home-post-0 .wp-container-2 {
+    gap: 0px;
+  }
+  .home-post-3 > div:first-child > P:nth-child(2) {
+    font-size: 13px;
+  }
+}
+@media (max-width: 782px) {
+  .home-post-1 > * {
+    width: 84%;
+  }
+  .home-post-2 {
+    height: auto;
+  }
+  .home-post-2 .wp-block-image {
+    display: none;
+  }
+  .home-post-3 {
+    height: auto;
+    display: block;
+  }
+  .home-post-3 > div:first-child {
+    margin: auto 10px;
+    padding-left: 16px;
+  }
+  .home-post-3 > div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /* grid-template-columns: repeat(3, 1fr); */
+    margin: 47px auto;
+  }
+  .home-post-3 .team-wrap {
+    display: block;
+  }
+  .home-post-3 > div:first-child > P:nth-child(2) {
+    font-size: 13px;
+  }
+  .home-post-2 {
+    font-size: 13px;
+  }
+  .home-post-1 {
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

@@ -64,4 +64,21 @@ a {
   text-align: center;
 }
 
+@media (min-width: 782px) and (max-width: 1025px) {
+  .banner-wrap {
+    display: none;
+  }
+  .men-page-wrap .services-list-wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 782px) {
+  .banner-wrap {
+    display: none;
+  }
+  .men-page-wrap .services-list-wrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 /*# sourceMappingURL=men.css.map */

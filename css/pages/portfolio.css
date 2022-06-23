@@ -34,14 +34,54 @@ a {
 }
 .port-page-wrap .left p {
   font-family: "Times New Roman", Times, serif;
-  font-size: 14px;
+  font-size: 17px;
   color: #787979;
 }
 .port-page-wrap .right {
   background-color: #fff;
 }
+.port-page-wrap .right figure {
+  overflow: hidden;
+}
 .port-page-wrap .right figure img {
+  width: 100%;
+  transition: all 1s;
   cursor: pointer;
+  filter: grayscale(110%);
+}
+.port-page-wrap .right figure img:hover {
+  filter: none;
+  transform: scale(1.2);
+}
+
+@media (min-width: 782px) and (max-width: 1025px) {
+  .port {
+    display: none;
+  }
+  .port-page-wrap {
+    grid-template-columns: 1fr;
+  }
+  .port-page-wrap .left {
+    margin: 20px auto;
+  }
+  .port-page-wrap .left h1 {
+    padding: 0;
+  }
+}
+@media (max-width: 782px) {
+  .port {
+    display: none;
+  }
+  .port-page-wrap {
+    padding: 0 8px;
+    grid-template-columns: 1fr;
+  }
+  .port-page-wrap .left {
+    margin: 20px auto;
+  }
+  .port-page-wrap .left h1 {
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=portfolio.css.map */

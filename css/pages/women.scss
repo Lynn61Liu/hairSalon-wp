@@ -66,13 +66,13 @@
         background-color: rgba(216, 112, 147, 0.433);
       }
       &:nth-child(1) {
-        // background-color: blue;
+       // background-color: blue;
         & > div:nth-of-type(2) {
           display: none;
         }
       }
       &:nth-child(4) {
-        // background-color: blue;
+        //  background-color: blue;
         & > div:nth-of-type(2) {
           display: none;
         }
@@ -142,4 +142,55 @@
       }
     }
   }
+}
+@media (min-width: 782px) and (max-width: 1025px){
+
+  .banner-wrap .banner-text {
+    display: none;
+}
+.women-page-wrap .items-wrap {
+  grid-template-columns: 1fr 1fr;
+
+}
+.women-page-wrap .items-wrap .women-list-wrap:nth-child(4) > div:nth-of-type(1) {
+  display: block;
+}
+.women-page-wrap .items-wrap .women-list-wrap:nth-child(4) > div:nth-of-type(2) {
+  display: block;
+}
+.women-page-wrap .items-wrap .women-list-wrap:nth-child(3) > div:nth-of-type(2) {
+  // background-color: blue;
+  display: none;
+}
+.women-page-wrap .items-wrap .women-list-wrap:nth-child(5) > div:nth-of-type(2) {
+  //background-color: blue;
+  display: none;
+}
+
+.women-page-wrap .items-wrap .women-list-wrap .list-content .treatments-filter p {
+  font-size: 16px;
+}
+.women-page-wrap .items-wrap .women-list-wrap .list-content .women-services-item {padding-left: 20%;}
+.women-page-wrap .items-wrap .women-list-wrap .list-content {font-size: 14px;}
+}
+@media (max-width: 782px) {
+  .banner-wrap .banner-text {
+    display: none;
+}
+.women-page-wrap > p {
+ 
+  max-width: 100%;
+  padding: 0 40px;
+  font-size: 16px;
+}
+.women-page-wrap .br0 {
+  width: 70%}
+  .women-page-wrap .items-wrap{
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+}
+.women-page-wrap .items-wrap .women-list-wrap .bar1{
+  display: block !important;
+}
 }
