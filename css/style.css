@@ -1152,5 +1152,73 @@ footer .social-icon .wp-block-group > figure:nth-of-type(3) img {
     margin-bottom: 8px;
   }
 }
+.nofind-page {
+  /* ==========================================================================
+     Media Queries
+     ========================================================================== */
+}
+.nofind-page .container {
+  display: table;
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+.nofind-page .content {
+  display: table-cell;
+  font-size: 22px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 40px 30px;
+}
+.nofind-page .inner-wrapper {
+  display: inline-block;
+}
+.nofind-page .top-title {
+  color: #4384F5;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.nofind-page .main-title {
+  line-height: 0;
+  font-size: 90px;
+  font-weight: 800;
+  color: #4384F5;
+}
+.nofind-page .svg-wrap {
+  display: inline-block;
+  font-size: 0;
+  vertical-align: super;
+}
+.nofind-page #lego {
+  padding: 5px;
+}
+.nofind-page .blurb {
+  margin-top: 30px;
+  color: #B6BECC;
+}
+.nofind-page .lego-btn {
+  background: #4384F5;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 25px;
+}
+@media only screen and (max-width: 440px) {
+  .nofind-page .main-title {
+    font-size: 60px;
+  }
+  .nofind-page #lego {
+    width: 50px;
+    height: 55px;
+    padding: 10px 5px;
+  }
+  .nofind-page .blurb,
+.nofind-page .lego-btn {
+    font-size: 18px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
