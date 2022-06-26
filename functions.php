@@ -77,3 +77,6 @@ function add_custom_logo()
 }
 
 add_action('after_setup_theme', 'add_custom_logo');
+
+
+include __DIR__ . "/inc/customizer.php";
